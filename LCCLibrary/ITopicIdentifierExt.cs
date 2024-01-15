@@ -8,11 +8,11 @@ namespace LCCTemplate
 {
     public interface ITopicIdentifierExt
     {
-        
+        string SubClassIdentifier { get; set; }
         string? DecimalExtension { get; set; }
         string? Place { get; set; }
         string? TimePeriod { get; set; }
         List<string>? BibliogrphicForm { get; set; }
-        List<ITopicIdentifierExt>? Topics { get; set; }
+        IEnumerable<ITopic>? Topics { get; set; }
     }
 }

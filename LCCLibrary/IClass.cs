@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace LCCTemplate
 {
-    public interface IClassIdentifier
+    public interface IClass
     {
         char Letter { get; set; }
         string Title { get; set; }
-        string Letters { get; }
+        string Identifier { get; }
         string FullIdentification { get; }
     }
 }
